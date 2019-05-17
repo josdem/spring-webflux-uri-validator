@@ -1,6 +1,6 @@
 package com.jos.dem.springboot.uri.encoding;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Date;
 import java.time.LocalTime;
@@ -21,14 +21,15 @@ import org.slf4j.LoggerFactory;
 public class EncoderTest {
 
   @Autowired
-  private EncoderService service;
+  private WebClientService service;
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@Test
 	public void shouldEncode() throws Exception {
     log.info("Running: Should encode at {}", new Date());
-    assertEquals("Hello World!", service.send());
+
+    assertEquals("Hello World!", service.send().block());
 	}
 
 }

@@ -22,7 +22,7 @@ public class EncoderController {
   public Mono<String> index(
       @PathVariable
         @Pattern(
-          regexp = "^\\d{4}[-]\\d{2}[-]\\d{2}[#]\\d+$",
+          regexp = "^\\d{4}[-]\\d{2}[-]\\d{2}[-]\\d+$",
           message = "Invalid storeOrderId format") String storeOrderId) {
     log.info("Calling to index");
     return Mono.just("Hello World!");

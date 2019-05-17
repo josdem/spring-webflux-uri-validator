@@ -15,7 +15,10 @@ public class WebClientServiceImpl implements WebClientService {
   private WebClient webClient;
 
   public Mono<String> send() {
-    return Mono.just("Hello World!");
+    return webClient.get()
+      .uri("/2019-05-17-888123")
+      .retrieve()
+    .bodyToMono(String.class);
   }
 
 }
