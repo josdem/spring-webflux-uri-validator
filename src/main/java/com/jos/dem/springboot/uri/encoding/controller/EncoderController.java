@@ -1,5 +1,7 @@
 package com.jos.dem.springboot.uri.encoding.controller;
 
+import reactor.core.publisher.Mono;
+
 import javax.validation.constraints.Pattern;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,13 +19,13 @@ public class EncoderController {
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
   @GetMapping("/{storeOrderId}")
-  public String index(
+  public Mono<String> index(
       @PathVariable
         @Pattern(
           regexp = "^\\d{4}[-]\\d{2}[-]\\d{2}[#]\\d+$",
           message = "Invalid storeOrderId format") String storeOrderId) {
     log.info("Calling to index");
-    return "Hello World!";
+    return Mono.just("Hello World!");
   }
 
 }
