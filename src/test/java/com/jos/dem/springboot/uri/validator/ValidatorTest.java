@@ -26,8 +26,8 @@ public class ValidatorTest {
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@Test
-	public void shouldEncode() throws Exception {
-    log.info("Running: Should encode at {}", new Date());
+	public void shouldValidateMnemonic() throws Exception {
+    log.info("Running: Validating mnemonic at {}", new Date());
 
     String path = "2019-05-19-888123";
     assertEquals("valid", service.send(path).block());
