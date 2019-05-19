@@ -8,9 +8,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 @SpringBootApplication
 public class UriValidatorApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(UriValidatorApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(UriValidatorApplication.class, args);
+  }
 
   @Bean
   WebClient webClient() {
