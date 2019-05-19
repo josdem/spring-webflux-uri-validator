@@ -22,14 +22,14 @@ public class EncoderController {
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
-  @GetMapping("/{storeOrderId}")
+  @GetMapping("/{mnemonic}")
   public Mono<String> index(
       @PathVariable
         @Pattern(
-          regexp = "^\\d{4}[-]\\d{2}[-]\\d{2}[#|-]\\d+$",
-          message = "Invalid storeOrderId format") String storeOrderId) {
-    log.info("Calling to index");
-    return Mono.just("Hello World!");
+          regexp = "^\\d{4}[-]\\d{2}[-]\\d{2}[-]\\d{6}$",
+          message = "Invalid mnemonic format") String mnemonic) {
+    log.info("INDEX: Mneminc is valid");
+    return Mono.just("valid");
   }
 
   @ExceptionHandler(ConstraintViolationException.class)

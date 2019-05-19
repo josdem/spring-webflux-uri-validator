@@ -30,7 +30,7 @@ public class EncoderTest {
     log.info("Running: Should encode at {}", new Date());
 
     String path = "2019-05-19-888123";
-    assertEquals("Hello World!", service.send(path).block());
+    assertEquals("valid", service.send(path).block());
 	}
 
 }
