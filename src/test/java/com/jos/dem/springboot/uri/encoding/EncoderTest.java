@@ -29,7 +29,8 @@ public class EncoderTest {
 	public void shouldEncode() throws Exception {
     log.info("Running: Should encode at {}", new Date());
 
-    assertEquals("Hello World!", service.send().block());
+    String path = "2019-05-19-888123";
+    assertEquals("Hello World!", service.send(path).block());
 	}
 
 }
