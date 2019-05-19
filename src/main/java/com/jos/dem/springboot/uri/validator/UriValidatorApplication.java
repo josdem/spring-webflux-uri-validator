@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
-public class UriEncoderApplication {
+public class UriValidatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UriEncoderApplication.class, args);
+		SpringApplication.run(UriValidatorApplication.class, args);
 	}
 
   @Bean
