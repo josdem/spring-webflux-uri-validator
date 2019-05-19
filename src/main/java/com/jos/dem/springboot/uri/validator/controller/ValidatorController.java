@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 
 @Validated
 @RestController
-public class EncoderController {
+public class ValidatorController {
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 

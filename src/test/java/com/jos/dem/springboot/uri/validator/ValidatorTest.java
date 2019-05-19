@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EncoderTest {
+public class ValidatorTest {
 
   @Autowired
   private WebClientService service;
