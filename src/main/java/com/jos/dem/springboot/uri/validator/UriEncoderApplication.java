@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.uri.encoding;
+package com.jos.dem.springboot.uri.validator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

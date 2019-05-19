@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.uri.encoding;
+package com.jos.dem.springboot.uri.validator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

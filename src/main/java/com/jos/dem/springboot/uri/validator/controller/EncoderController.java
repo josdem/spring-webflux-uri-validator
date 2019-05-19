@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.uri.encoding.controller;
+package com.jos.dem.springboot.uri.validator.controller;
 
 import reactor.core.publisher.Mono;
 
