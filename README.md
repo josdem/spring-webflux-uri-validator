@@ -1,7 +1,7 @@
 Spring Webflux URI Validator
 ----------------------------------------
 
-This project shows how to validate URI path variables using [Hibernate Validator](http://hibernate.org/validator/) in a Spring Webflux application.
+This project shows how to validate URI path variables using [Spring Framework Validated](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/validation/annotation/Validated.html) in a Spring Webflux application.
 
 #### To run the project
 
